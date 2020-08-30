@@ -9,7 +9,17 @@
 <body>
     <div id="app">
         <input type="text">
-        <p>Hello John</p>
+        <p>Hello {{ name }}</p>
     </div>
+    <script>
+        new Vue({
+            el: "#app",
+            data() {
+                return {
+                    name: "John"
+                }
+            }
+        })
+    </script>
 </body>
 </html>
